@@ -1,1 +1,41 @@
-<p>create-user works!</p>
+<div class="form">
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-title text-center">
+        <h1><b>Crear usuario</b></h1>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="form">
+          <div class="mb-3">
+            <label for="username" class="form-label">Usuario</label>
+            <input
+              type="text"
+              class="form-control"
+              name="username"
+              formControlName="username"
+              id="username"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              formControlName="password"
+              id="password"
+            />
+          </div>
+        </form>
+        <div>
+          <button class="btn btn-success" (click)="save()">
+            Crear Usuario
+          </button>
+          <button class="ms-5 btn btn-secondary" (click)="redirectToLogin()">
+            ir a login
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
