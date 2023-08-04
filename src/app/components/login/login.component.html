@@ -1,0 +1,33 @@
+<div class="form">
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-title text-center">
+        <h1><b>Login</b></h1>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="form">
+          <div class="mb-3">
+            <label for="username" class="form-label">Usuario</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="username"
+              id="username"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              formControlName="password"
+              id="password"
+            />
+          </div>
+
+          <button class="btn btn-success" (click)="login()">Ingresar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
